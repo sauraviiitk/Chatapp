@@ -21,7 +21,7 @@ function Chat1() {
         inputref.current.value=""
     }
     useEffect(()=>{
-        socketref.current=new WebSocket("ws://localhost:8080/");
+socketref.current = new WebSocket("wss://chatapp-1-lsa7.onrender.com/");
         socketref.current.onopen=()=>{
             const joinmsg={
                 type:"join",

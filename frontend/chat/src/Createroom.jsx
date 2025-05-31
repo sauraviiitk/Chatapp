@@ -16,7 +16,7 @@ function Createnewroom(){
     useEffect(()=>{
        const newroomid=genrateroomid();
        setroomid(newroomid);
-       fetch('http://localhost:5000/createroom',{
+       fetch('https://chatapp-1-lsa7.onrender.com/createroom',{
         method:"POST",
         headers: {
         "Content-Type": "application/json"

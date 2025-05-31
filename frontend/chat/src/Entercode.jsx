@@ -10,7 +10,7 @@ function Entercode(){
             alert("Please Enter a valid room id");
 
         }
-        const res= await fetch("http://localhost:5000/joinroom",{
+        const res= await fetch("https://chatapp-1-lsa7.onrender.com/joinroom",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",
